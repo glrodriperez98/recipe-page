@@ -79,6 +79,10 @@ ul, ol {
 li {
     margin-bottom: 0.5rem;
 }
+
+li span {
+    font-weight: 600;
+}
   
 ul li::marker,
 ol li::marker {
@@ -105,10 +109,19 @@ ol li::marker {
     border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
-.nutrition strong {
-    color: hsl(14, 45%, 36%);
+.nutrition div span {
+    width: 50%;
 }
-  
+
+.nutrition div span:first-child {
+    padding-left: 2rem;
+}
+
+.nutrition div span:last-child {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
 .nutrition div:last-child {
     border-bottom: none;
 }
